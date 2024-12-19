@@ -7,11 +7,11 @@ import { BriefcaseBusiness, FolderCode, Braces, House, User} from 'lucide-react'
 
 //declaring an array of objects that contain the href and name of the links that will be displayed in the navbar
 const links = [
-  {href: '/', icon: <House className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}"/>},
-  {href: '/about', icon:  <User className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out }" />},
-  {href: '/projects', icon: <FolderCode className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}" />},
-  {href: '/experience', icon: <BriefcaseBusiness className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}" />},
-  {href: '/skills', icon: <Braces className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}" />},
+  {href: '/', icon: <House className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}"/>, hoverLabel: "Home"},
+  {href: '/about', icon:  <User className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out }" />, hoverLabel: "About"},
+  {href: '/projects', icon: <FolderCode className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}"/> , hoverLabel: "Projects" },
+  {href: '/experience', icon: <BriefcaseBusiness className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}" />, hoverLabel: "Experience" },
+  {href: '/skills', icon: <Braces className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}" />, hoverLabel: "Skills" },
 ]
 
 //we are going to return all the link tags under a nav tag that is styled with tailwindcss
@@ -26,9 +26,20 @@ export default function Navbar (){
       manually change a bunch of Link tags now if we want to update any specific link just go to link array*/}
 
     {/*Used links && links.map in case links is null we can protect our code.*/}
+    
+    {/*added spans because they are inline and wont make their own blocks. Made position absolute so they dont mess with icons positioning. Made each link a relative group so they know in reference to what is their aboslute position changing. Second span is to add the arrow affect to my tags*/}
 
-    {links && links.map( ({href, icon}) => (
-      <Link key = {href} href = {href}> {icon} </Link>
+    {links && links.map( ({href, icon, hoverLabel}) => (
+      <Link key = {href} href = {href} className = "group relative group"> {icon} 
+        <span className = "absolute right-10 -top-0.5 text-sm bg-zinc-700 text-white p-0.5 pl-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out pointer-events-none"> {hoverLabel} 
+
+          <span className = "absolute top-1/2 transform -translate-y-1/2 -translate-x-2 w-4 h-4 bg-zinc-700 rotate-45 -z-10"></span>
+
+        </span>
+      
+      
+      </Link>
+    
     ))}
 
     </nav>
