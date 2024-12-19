@@ -1,17 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
+import { BriefcaseBusiness, FolderCode, Braces, House, User} from 'lucide-react'; //importing specific icons from lucide-react library these icons already have the svg code edited and are made into components so tailwind works on them. We want them with tailwind working so we can apply hover effects and transitions to them.
 
 //<Link> tag is a react thing that improves client side traveling to links. when user clicks on it it will take you there
 //href defines where the link will take you once it is clicked
 
 //declaring an array of objects that contain the href and name of the links that will be displayed in the navbar
 const links = [
-  {href: '/', name: 'H'},
-  {href: '/about', name: 'A'},
-  {href: '/projects', name: 'P'},
-  {href: '/experience', name: 'E'},
-  {href: '/skills', name: 'S'},
+  {href: '/', icon: <House className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}"/>},
+  {href: '/about', icon:  <User className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out }" />},
+  {href: '/projects', icon: <FolderCode className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}" />},
+  {href: '/experience', icon: <BriefcaseBusiness className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}" />},
+  {href: '/skills', icon: <Braces className = "text-black hover:text-pink-300 transition-colors duration-300 ease-in-out}" />},
 ]
+
+//we are going to return all the link tags under a nav tag that is styled with tailwindcss
 
 export default function Navbar (){
   
@@ -22,8 +25,10 @@ export default function Navbar (){
     {/*mapping through the links array and creating a Link tag for each link in the array, just easier and better code practice so we dont have to
       manually change a bunch of Link tags now if we want to update any specific link just go to link array*/}
 
-    {links && links.map( ({href, name}) => (
-      <Link key = {href} href = {href}> {name} </Link>
+    {/*Used links && links.map in case links is null we can protect our code.*/}
+
+    {links && links.map( ({href, icon}) => (
+      <Link key = {href} href = {href}> {icon} </Link>
     ))}
 
     </nav>
