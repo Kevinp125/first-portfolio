@@ -17,5 +17,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat-alternates),Arial, Helvetica, sans-serif; /* changed global body font-family to have monsterat variable first so that any shown content uses that font and isnt overriding the work I did in layout */
 }
