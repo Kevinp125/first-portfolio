@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat_Alternates} from "next/font/google"; //importing the Montserrat_Alternates font from google fonts one I will use througout my website
 import "./globals.css";
 import Navbar from "./(components)/Navbar"; //importing our navbar component to call it here in our layout.tsx since these are the things that get rendered persistently accross all routes that are childre of it
+import Header from "./(components)/Header"; //importing our header component so it can be displayed on our fixed layout
 
 const montserratAlternates = Montserrat_Alternates({ //this function is provided by nextJS, we pass it the subsets, weights, and styles that I specify and returns a object with the font information. className that will apply font and styles as well as variable to use in my styles
   subsets: ["latin"], //specifying character subset
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className = {montserratAlternates.variable}>
       <body className= "bg-figmaGray"> 
+        <Header/>
         <Navbar/>
         {children}
       </body>
