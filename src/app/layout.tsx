@@ -23,7 +23,6 @@ export default function RootLayout({
   return (
     <html lang="en" className = {montserratAlternates.variable}>
       <body className= "bg-figmaGray"> 
-        <Header/>
         <Navbar/>
         {children}
       </body>

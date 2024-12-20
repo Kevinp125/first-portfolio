@@ -1,7 +1,7 @@
+import Header from "../(components)/Header";
+
 export default function app() {
   return (
-    <div>
-      <p className = "text-red-500"> in skills route</p>
-    </div>
+    <Header header = "Skills" icon = "Skills"/>
   );
 }
