@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Header from "./(components)/Header";
-import { House } from "lucide-react";
 
 const introductionText: string = "Hi, I'm Kevin Pereda — software engineer and undergraduate student at UCF."; //declaring a string variable that will hold the introduction text that will be displayed on the home page
 
