@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./(components)/Navbar"; //importing our navbar component to call it here in our layout.tsx since these are the things that get rendered persistently accross all routes that are childre of it
 import Header from "./(components)/Header"; //importing our header component so it can be displayed on our fixed layout
 import KevinCard from "./(components)/KevinCard";
+import CherryBlossom from "./(components)/CherryBlossom";
 
 const montserratAlternates = Montserrat_Alternates({ //this function is provided by nextJS, we pass it the subsets, weights, and styles that I specify and returns a object with the font information. className that will apply font and styles as well as variable to use in my styles
   subsets: ["latin"], //specifying character subset
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className= "bg-figmaGray"> 
         <Navbar/>
         <KevinCard/>
+        <CherryBlossom/>
         {children}
       </body>
     </html>

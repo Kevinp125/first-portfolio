@@ -26,7 +26,7 @@ export default function KevinCard (){
      and use the flex to center everything within that container. */}
 
   return(
-    <div className = "fixed flex items-center flex-col left-8 top-1/2 -translate-y-1/2 bg-navbarFill w-72 h-128 rounded-3xl overflow-visible z-10">
+    <div className = "fixed flex items-center flex-col left-14 top-1/2 -translate-y-1/2 bg-navbarFill w-72 h-128 rounded-3xl overflow-visible z-10">
       <div className = "w-52 h-52 translate-y-8">
         {KevinPFP}
       </div>
@@ -34,7 +34,7 @@ export default function KevinCard (){
       <div className = "flex justify-center gap-3 mt-32">
 
         {circleSocialIcons && circleSocialIcons.map(({href, icon}) =>(
-          <div className = "w-16 h-16 bg-pink-300 rounded-full flex items-center justify-center"> 
+          <div key = {href} className = "w-16 h-16 bg-pink-300 rounded-full flex items-center justify-center"> 
             <a href={href} target="_blank" rel="noopener noreferrer">
               {icon}
             </a>
@@ -43,7 +43,7 @@ export default function KevinCard (){
         ))}
       </div>
 
-      <div className = " flex justify-center items-center w-52 h-14 mt-6 rounded-full bg-pink-300">
+      <div className = " flex justify-center items-center w-52 h-14 mt-6 rounded-full bg-subtlePink">
         <Link target = "_blank" href = "/KevinResume.pdf"> <FileText className = "text-black w-6 h-6" /> </Link>
         <Link target = "_blank" href = "/KevinResume.pdf" className = "text-black text-2xl target:"> Resume </Link>
 

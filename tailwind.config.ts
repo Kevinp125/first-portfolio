@@ -12,6 +12,7 @@ export default {
         figmaGray: "#656060", //this is the custom color i added from the figma website 
         navbarFill: "#4F4848", //color for navbar grabed from figma
         navbarBorder: "#7C7A7A", //color for navbar border grabed from figma
+        subtlePink: "#FEC9DD", //very subtle pink color for buttons and stuff that match with the blossom color got from figma 
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
