@@ -5,7 +5,7 @@ import { Mail, Github, Linkedin, FileText} from 'lucide-react';
 
 //variable that will contain pfp image displayed on the littel card on the left side of the page
 
-const KevinPFP = <Image className = "rounded-3xl" src = "/images/Kevinpfp.jpg" alt = "/images/mtFuji.png" width = {200} height = {200} unoptimized/>; 
+const KevinPFP = <Image className = "rounded-3xl" src = "/images/kevinpfp.jpg" alt = "Kevin's Profile Picture" width = {200} height = {200} unoptimized/>; 
 
 //making an array of key value pairs so we can map over it and display them in our pink circles that will be the social links in the card
 const circleSocialIcons = [
