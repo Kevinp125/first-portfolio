@@ -37,11 +37,11 @@ export default function Header({header, icon}: {header: string, icon: string}){ 
 
     //here we place the icon and the header inside a flex component dont specify flex row because by default that is what is applied. Horizontal axis is the main axis (side by side) and the vertical axis is the cross axis (top to bottom) therefore we use items-center which targets the cross to center them vertically (make sure same height)
     return (
-      <div className = "flex items-center gap-0.5 border-navbarBorder border-2 translate-y-20 rounded-2xl p-2 "> 
+      <div className = " fixed top-20 flex items-center gap-0.5 border-navbarBorder border-2 rounded-2xl p-2 "> 
 
         {iconComponent}
         <h1 className = "text-xl text-pink-300 "> {header} </h1>
-
+      
       </div>
 
     );

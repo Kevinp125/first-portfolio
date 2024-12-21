@@ -17,7 +17,12 @@ export default {
       },
       borderWidth: { //added this as well for custom borderWidths
         3: "3px",
-      }
+      },
+      height:{
+        '128': '32rem',
+        '144': '36rem',
+        '160': '40rem',
+      },
     },
   },
   plugins: [],
