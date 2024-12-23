@@ -38,8 +38,8 @@ export default function ExperienceCard({ experience }: { experience: Experience 
 
           {experience.description.paragraph}  
 
-          {experience.description.bullets.map((bullet) => (
-            <li className = "text-sm">{bullet}</li>
+          {experience.description.bullets.map((bullet, i) => (
+            <li key = {i} className = "text-sm">{bullet}</li>
           ))}
       
 

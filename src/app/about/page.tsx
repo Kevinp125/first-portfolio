@@ -12,7 +12,7 @@ export default function app() {
           I thrive in environments where clear communication and teamwork are essential. 
           Programming isn&apos;t just my profession; it&apos;s also my hobby. 
           I love diving into new technologies and coding challenges in my spare time.
-          <br /><br />Beyond the screen, I embrace the philosophy of "strong body, strong mind." 
+          <br /><br />Beyond the screen, I embrace the philosophy of &quot;strong body, strong mind.&quot; 
           Staying active through exercise helps me maintain a balanced and healthy lifestyle, which in turn fuels my productivity and creativity. 
           I&apos;m always eager to connect with like-minded professionals and explore new opportunities in the tech world. 
         </p>
