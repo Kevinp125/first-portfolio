@@ -114,12 +114,12 @@ export default function app() {
 
         <div className = "relative w-full flex flex-row"> {/*This div is so that the bamboo and the sword and card all line up side by side */}
           
-          <div className="absolute top-6 -left-12 w-1/6 min-h-screen bg-contain h-full z-10" style ={{backgroundImage: "url('/images/bamboo.png')"}}></div>
+          <div className="absolute top-6 -left-12 w-1/6 bg-contain h-full z-10" style ={{backgroundImage: "url('/images/bamboo.png')"}}></div>
           
           <div className="translate-x-8 w-full py-8 flex flex-col gap-10 z-20">
 
             {/*below we map over the experience array of objects everytime it iterates it grabs the object and passes it trhough the argument "exp" to the callback function that defines what we are going to retrun and display which is the experience card component */}
-            {experience.map((exp) => ( 
+            {experience.map((exp) => (
             <ExperienceCard key = {exp.key} experience = {exp}/>
 
             ))}
