@@ -3,6 +3,9 @@ import IconCard from "../(components)/IconCard";
 
 export default function app() {
 
+  //below are array of objects that store the filepath of the image and the alt for it 
+  //if you wish to add another icon add another object to the array and make sure you
+  //put the image in the corresponding folder in the public directory
   const languageIcons = [
     {src: "/images/techIcons/languages/c.svg", alt: "C"},
     {src: "/images/techIcons/languages/cpp.svg", alt: "C++"},
@@ -35,20 +38,20 @@ export default function app() {
 
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center"> {/*This div is just to make sure all other siblings in this page stack on each other vertically */}
 
-      <div className = "flex flex-cols items-start pl-44 pt-48">
+      <div className = "flex flex-cols items-start pl-44 pt-48"> {/*This div is to align the <p> tag with our header */}
         <Header header = "Skills" icon = "Skills"/>
         <p className = "text-lg max-w-2xl wrap ">Throughout my journey of studying computer science and working on various projects, I&apos;ve had the opportunity to work with and experiment with a diverse range of technologies, tools, and frameworks. Here&apos;s a glimpse of what I&apos;ve explored along the way. </p>
       </div>
       
-      <div className = "grid grid-cols-1 gap-16 pt-12 pl-40">
+      <div className = "grid grid-cols-1 gap-16 pt-12 pl-40"> {/*Here we define a grid of only one column so that all of our sections "sibling divs" can stack on each other */}
 
-        {/*languages section */}
+        {/*languages section we wrap the header and nested grid in a div so that tailwind knows both of those take up one row */}
         <div>
 
           <h1 className = "flex flex-col items-center text-4xl pb-5">Languages</h1>
-
+          {/*This is a nested grid of 4 cols didnt declared the rows because they will be auto created as cols fill up but this grid is for icons which will be rendered through the IconCard component. We map through languageIcons array of objects to get each object */}
           <div className = "grid grid-cols-4 gap-4">
             {languageIcons.map(({src, alt}) => (
               <IconCard key = {src} src = {src} alt = {alt}/>
@@ -57,13 +60,14 @@ export default function app() {
 
         </div>
       
-        {/*Web section */}
+        {/*Web section also has header and nested grid like explained above*/}
 
         <div>
 
           <h2 className = "flex flex-col items-center text-4xl pb-5"> Web</h2>
 
           <div className = "grid grid-cols-4 gap-4">
+            {/*We map through webIcons array of objects to get each object and pass in the values to the IconCard component */}
             {webIcons.map(({src, alt}) => (
               <IconCard key = {src} src = {src} alt = {alt}/>
             ))}
@@ -73,13 +77,14 @@ export default function app() {
         </div>
 
 
-        {/*Tools section */}
+        {/*Tools section also has header and nested grid like explained above*/}
 
         <div>
 
           <h3 className = "flex flex-col items-center text-4xl pb-6"> Tools </h3>
 
           <div className = "grid grid-cols-4 gap-4 pb-5">
+            {/*We map through webIcons array of objects to get each object and pass in the values to the IconCard component*/}
             {toolIcons.map(({src, alt}) => (
               <IconCard key = {src} src = {src} alt = {alt}/>
             ))}
