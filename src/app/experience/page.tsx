@@ -1,41 +1,43 @@
 import Header from "../(components)/Header";
+import ExperienceCard from "../(components)/ExperienceCard";
+import Image from "next/image";
 
 export default function app() {
   
   //this array of objects stores all my expericence data( internships jobs etc if you ever wish to add / update any experiece just come to this array and edit here code below will use .map so it updates regardless)
   const experience = [
+
+    //META
+
     {
-
-      //META
-
-      title: "Meta University Software Engineering Intern",
+      key: 1, //helps with array.map to keep track of each element
+      title: "MetaU Software Engineering Intern",
       company: "Meta",
       fromDate: "Incoming Summer 2025",
 
       //description nested object because it has a paragraph and an array of bullet points that describe what i did at the job
       description: {
-        paragraph: "need to fill this in talk about ur time there yada yada",
+        paragraph: "***This is where description of work at this compnay goes need to fill this in after website is done",
         
         bullets: [
           //havent interned so nothing yet
         ]
       },
       
-      iconImage: "/images/companyLogos/meta.webp",
+      iconImage: "/images/companyLogos/meta.jpg",
     },
 
-
+     //MITSUBISHI POWER OF AMERICAS
+  
     {
-
-      //MITSUBISHI POWER OF AMERICAS
-
+      key: 2, //helps with array.map to keep track of each element
       title: "Software Development Associate",
       company: "Mitsubishi Power Americas",
       fromDate: "May 2024 - August 2024",
 
       //description nested object because it has a paragraph and an array of bullet points that describe what i did at the job
       description: {
-        paragraph: "need to fill this in talk about ur time there yada yada",
+        paragraph: "***This is where description of work at this compnay goes need to fill this in after website is done",
         
         bullets: [
           "Utilized PI Asset Framework (PI AF) software to backfill specific attributes in the PI AF database, improving data accuracy by 25% and ensuring reliable data for ongoing operations.",
@@ -47,22 +49,23 @@ export default function app() {
         ]
       },
       
-      iconImage: "/images/companyLogos/mitsubishiPower.png",
+      iconImage: "/images/companyLogos/mitsubishi.jpg",
     },
 
     //ALL MECHANIC CORP
 
     {
+      key: 3, //helps with array.map to keep track of each element
       title: "Mechanical Engineer Assistant",
       company: "All Mechanic Corp",
       fromDate: "July 2022 - August 2022",
 
       //description nested object because it has a paragraph and an array of bullet points that describe what i did at the job
       description: {
-        paragraph: "need to fill this in talk about ur time there yada yada",
+        paragraph: "***This is where description of work at this compnay goes need to fill this in after website is done",
         
         bullets: [
-          "• Accelerated diagnosis and repair of several automobiles, performed oil changes, tire rotations, and battery replacements, increasing daily output of serviced cars by 15%.",
+          "Accelerated diagnosis and repair of several automobiles, performed oil changes, tire rotations, and battery replacements, increasing daily output of serviced cars by 15%.",
           "Furthered growth of the company by gathering data and promoting them online.",
         ]
       },
@@ -74,13 +77,14 @@ export default function app() {
     //BLACK HISTORY TOURS
 
     {
+      key: 4, //helps with array.map to keep track of each element
       title: "Social Media Marketing Assistant",
       company: "Black History Tours",
       fromDate: "June 2020 - August 2020",
 
       //description nested object because it has a paragraph and an array of bullet points that describe what i did at the job
       description: {
-        paragraph: "need to fill this in talk about ur time there yada yada",
+        paragraph: "***This is where description of work at this compnay goes need to fill this in after website is done",
         
         bullets: [
           "Assisted in data sourcing and constructed a competitor analysis spreadsheet, analyzing data from 20 competitors to provide strategic insights for business growth.",
@@ -95,18 +99,33 @@ export default function app() {
 
   //below is actual code that is going to get rendered on the page
   
+  /*in order to generate our experience cards I mapped over the experience array of objects
+    so that on each iteration we pass to our Experience Card component the exp object at that
+    index. The Experience card component will render all the infomraiton using what is in the exp
+    object field. Just keeps our code in this page more clean. */
   return (
-    <div className= "min-h-screen flex flex-col items-center pl-44">
+    <div className= "min-h-screen flex flex-col items-center pl-44">{/*div so that items contained are shifted left by 44 and are centered horizontally*/}
 
 
-      <div className= "flex flex-col items-start pt-48">
+      <div className= "flex flex-col items-start pt-48"> {/*Another div this time so all elements inside stay in middle of page but also align with each other left. Kind of like a left-align */}
 
+        {/*Header for the page experience as well as a little paragrpah describing my journey */}
         <Header header = "Experience" icon = "Experience"/>
         <h2 className = "text-lg max-w-2xl wrap">My journey in tech has been shaped by amazing opportunities and experiences. Here&apos;s a quick glimpse at the path I&apos;ve taken so far.</h2>
 
-        <div className = "flex ">
+        <div className = "relative w-full flex flex-row"> {/*This div is so that the bamboo and the sword and card all line up side by side */}
           
-          <div className="w-28 min-h-screen bg-contain scroll -ml-12 mt-6" style ={{backgroundImage: "url('/images/bamboo.png')"}}></div>
+          <div className="absolute top-6 -left-12 w-1/6 min-h-screen bg-contain h-full z-10" style ={{backgroundImage: "url('/images/bamboo.png')"}}></div>
+          
+          <div className="translate-x-8 w-full py-8 flex flex-col gap-10 z-20">
+
+            {/*below we map over the experience array of objects everytime it iterates it grabs the object and passes it trhough the argument "exp" to the callback function that defines what we are going to retrun and display which is the experience card component */}
+            {experience.map((exp) => ( 
+            <ExperienceCard key = {exp.key} experience = {exp}/>
+
+            ))}
+          </div>
+
 
         </div>
         
