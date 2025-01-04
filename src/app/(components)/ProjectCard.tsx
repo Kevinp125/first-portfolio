@@ -45,7 +45,7 @@ export default function ProjectCard({project}: {project: Project}) {
               })}
           </div>
 
-          <Link className = "underline text-subtlePink hover:text-pink-400 p-4" href = {project.linkRef}> Visit </Link>
+          <Link target = "_blank" className = "underline text-subtlePink hover:text-pink-400 p-4" href = {project.linkRef}> Visit </Link>
         </div>
   
       </div>

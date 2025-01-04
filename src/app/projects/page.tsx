@@ -32,7 +32,7 @@ export default function app() {
       description: "I spent a few months implementing a 2-4 tree in Java from scratch. While I can't beat Java's TreeSet (maybe one day), my implementation was only a few milliseconds slower. This project helped me understand edge cases, achieve near-comparable performance, and truly grasp how the 2-4 tree data structure works.",
       imageSrc: "/images/projectIcons/bonsaiTree.png",
       imageAlt: "2-4 Tree Logo",
-      linkRef:"",
+      linkRef:"https://github.com/Kevinp125/2-4-Tree.git",
       techUsed: ["Java"],
     },
 
@@ -43,7 +43,7 @@ export default function app() {
       description: "I implemented a SkipList from scratch using generics, making it compatible with any data type—just like a Java collection. This project helped me truly understand generics and how to make data structures accessible to any type.",
       imageSrc: "/images/projectIcons/skiplist.png",
       imageAlt: "Skip List Collections Logo",
-      linkRef:"",
+      linkRef:"https://github.com/Kevinp125/SkipList-Project.git",
       techUsed: ["Java"],
     },
 
