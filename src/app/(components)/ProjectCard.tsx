@@ -33,8 +33,7 @@ export default function ProjectCard({project}: {project: Project}) {
         
         <div className = "flex flex-col items-center justify-center z-10"> {/*Had to set z of everything in here to 10 so that it went over the bg above and wasnt in the same layer allows for text to show as white */}
 
-          <p className = "text-white text-lg p-4">{project.description}</p>
-          
+          <p className = "text-white text-sm p-4">{project.description}</p>
           {/*The below div is used to display the little tags underneaht my project descriptiont that show what tech I used for the respective project going to make this div a flex and tell it to wrap so as items get added they wrap to the next row and stay centered */}
           <div className = "flex flex-grow flex-wrap gap-3 justify-center items-center">
             {project.techUsed.map((tech, i) => {

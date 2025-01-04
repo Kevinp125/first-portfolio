@@ -26,7 +26,7 @@ export default function app() {
 
   const toolIcons = [
     {src: "/images/techIcons/tools/chat.svg", alt: "ChatGPT"},
-    {src: "/images/techIcons/tools/discord.svg", alt: "Discord"},
+    // {src: "/images/techIcons/tools/discord.svg", alt: "Discord"},
     {src: "/images/techIcons/tools/figma.svg", alt: "figma"},
     {src: "/images/techIcons/tools/git.svg", alt: "git"},
     {src: "/images/techIcons/tools/github.svg", alt: "github"},

@@ -61,7 +61,7 @@ export default function app() {
       </div>
 
       {/*This div maintains our grid of project cards. We map over the projectInfo array of objects and pass each object into the PorjectCard where the card gets rendered on to the grid */}
-      <div className = "grid grid-cols-2 gap-4 pt-16 pl-36 auto-rows-fr"> {/*Here we added auto-rows-fr to make sure if one card has a lot of tech and the height is bigger other cards match this height as well */}
+      <div className = "grid grid-cols-2 gap-4 pt-8 pl-36 auto-rows-fr"> {/*Here we added auto-rows-fr to make sure if one card has a lot of tech and the height is bigger other cards match this height as well */}
         {projectInfo.map((project, i) => (
           <ProjectCard key = {i} project = {project}/>
         ))}
