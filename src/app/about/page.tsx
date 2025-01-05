@@ -7,7 +7,7 @@ export default function app() {
       
       <div className = "flex justify-start pt-48">
         <Header header = "About" icon = "About"/>
-        <p className = "wrap text-2xl max-w-2xl">
+        <p className = "wrap text-2xl max-w-2xl animate-fade-up animate-duration-[2000ms] animate-ease-out animate-normal animate-fill-forwards">
           As a Computer Science student at the University of Central Florida, I bring a passion for technology and a collaborative spirit to every project. 
           I thrive in environments where clear communication and teamwork are essential. 
           Programming isn&apos;t just my profession; it&apos;s also my hobby. 

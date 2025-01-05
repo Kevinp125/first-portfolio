@@ -63,7 +63,10 @@ export default function app() {
       {/*This div maintains our grid of project cards. We map over the projectInfo array of objects and pass each object into the PorjectCard where the card gets rendered on to the grid */}
       <div className = "grid grid-cols-2 gap-4 pt-8 pl-36 auto-rows-fr"> {/*Here we added auto-rows-fr to make sure if one card has a lot of tech and the height is bigger other cards match this height as well */}
         {projectInfo.map((project, i) => (
-          <ProjectCard key = {i} project = {project}/>
+          //below we passed in the inline css style prop to the ProjectCard component so that we can stagger the animation of each card. We do this by multiplying the index by 0.2s so that each card is delayed by 0.2s. We also passed in the className so we can give parent porject card div the fade-right animation
+          //remember we need to use style because we need to change vanilla css since tailwind doesnt support dynamic delay times they are static
+          <ProjectCard style = {{animationDelay: `${i*0.2}s`}} className = "animate-fade-right animate-normal animate-fill-forwards" key = {i} project = {project}/>
+  
         ))}
       </div>
 

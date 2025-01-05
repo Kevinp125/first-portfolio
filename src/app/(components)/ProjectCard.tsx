@@ -12,14 +12,15 @@ interface Project {
 }
 
 
-export default function ProjectCard({project}: {project: Project}) {
+export default function ProjectCard({project, className, style}: {project: Project, className: string, style: React.CSSProperties}) {
 
   //Needed these ternaries because for some reason my cyber spur image was smaller than the other ones so it checks if the image path name passed in was the cyber spurs one it makes the width and height bigger for it
   const width = project.imageSrc === "/images/projectIcons/cyber.png" ? 175 : 100;
   const height = project.imageSrc === "/images/projectIcons/cyber.png" ? 175 : 100;
 
   return (
-    <div className = "group flex flex-col items-center justify-center bg-navbarFill w-80 min-h-64 rounded-2xl border-3 border-pink-300 relative overflow-hidden"> {/*This div centers the icon and title in the middle of the box */}
+    //style and className in this div got passed in and they are what animate the whole project card
+    <div style = {style} className = {`${className} opacity-0 group flex flex-col items-center justify-center bg-navbarFill w-80 min-h-64 rounded-2xl border-3 border-pink-300 relative overflow-hidden`}> {/*This div centers the icon and title in the middle of the box */}
       
       {/*Made below div absolute in document flow relative to our div above which is the card itself so that when we hover the image and name dont affect positioning of other hover info */}
       <div className = "absolute flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 group-hover:pointer-events-none"> {/*This div centers the icon and text so that they are lined up it also has some hover properties for example when we hover we set opactiy to 0 so it can fade out */}
