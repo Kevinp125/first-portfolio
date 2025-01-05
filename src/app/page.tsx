@@ -12,7 +12,7 @@ export default function Home() {
         <p className = "text-white transform text-6xl max-w-3xl">{introductionText}</p>
       </div>
       
-      <Image className = "absolute -bottom-20 " src = "/images/mtFuji.png" alt = "Mount Fuji" width = {800} height = {800}/>
+      <Image className = "select-none absolute -bottom-20" src = "/images/mtFuji.png" alt = "Mount Fuji" width = {800} height = {800}/>
 
     </div>
   );

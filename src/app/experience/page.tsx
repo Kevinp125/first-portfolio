@@ -19,7 +19,7 @@ export default function app() {
         paragraph: "***This is where description of work at this compnay goes need to fill this in after website is done",
         
         bullets: [
-          //havent interned so nothing yet
+          "Thrilled to join Meta as a Software Engineer Intern through the University Program this upcoming summer, eager to collaborate with talented individuals, expand my software engineering skills, and contribute to technology that connects people worldwide."
         ]
       },
       

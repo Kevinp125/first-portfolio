@@ -23,7 +23,7 @@ export default function ProjectCard({project}: {project: Project}) {
       
       {/*Made below div absolute in document flow relative to our div above which is the card itself so that when we hover the image and name dont affect positioning of other hover info */}
       <div className = "absolute flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 group-hover:pointer-events-none"> {/*This div centers the icon and text so that they are lined up it also has some hover properties for example when we hover we set opactiy to 0 so it can fade out */}
-        <Image src = {project.imageSrc} alt = {project.imageAlt} width = {width} height = {height}/>
+        <Image className = "select-none" src = {project.imageSrc} alt = {project.imageAlt} width = {width} height = {height}/>
         <p className = "p-5 text-lg">{project.name}</p>
       </div>
       
