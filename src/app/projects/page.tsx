@@ -22,7 +22,7 @@ export default function app() {
       description: "Cyber Spurs is a game about a futuristic cowboy taking down cyber criminals using bullet time and takedown abilities. I created the boss battle state machine from scratch and handled enemy navigation with NavMeshes. Try playing it for yourself!",
       imageSrc: "/images/projectIcons/cyber.png",
       imageAlt: "Cyber Spurs Logo",
-      linkRef:"",
+      linkRef:"https://play.unity.com/en/games/b645f619-26f2-4bb4-875a-3b0952dbef90/cyberspurs",
       techUsed: ["Unity", "C#"],
     },
 
