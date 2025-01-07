@@ -9,7 +9,6 @@ export default function app() {
     //META
 
     {
-      key: 1, //helps with array.map to keep track of each element
       title: "MetaU Software Engineering Intern",
       company: "Meta",
       fromDate: "Incoming Summer 2025",
@@ -29,7 +28,6 @@ export default function app() {
      //MITSUBISHI POWER OF AMERICAS
   
     {
-      key: 2, //helps with array.map to keep track of each element
       title: "Software Development Associate",
       company: "Mitsubishi Power Americas",
       fromDate: "May 2024 - August 2024",
@@ -54,7 +52,6 @@ export default function app() {
     //ALL MECHANIC CORP
 
     {
-      key: 3, //helps with array.map to keep track of each element
       title: "Mechanical Engineer Assistant",
       company: "All Mechanic Corp",
       fromDate: "July 2022 - August 2022",
@@ -76,7 +73,6 @@ export default function app() {
     //BLACK HISTORY TOURS
 
     {
-      key: 4, //helps with array.map to keep track of each element
       title: "Social Media Marketing Assistant",
       company: "Black History Tours",
       fromDate: "June 2020 - August 2020",
@@ -110,7 +106,7 @@ export default function app() {
 
         {/*Header for the page experience as well as a little paragrpah describing my journey */}
         <Header header = "Experience" icon = "Experience"/>
-        <h2 className = "text-lg max-w-2xl wrap">My journey in tech has been shaped by amazing opportunities and experiences. Here&apos;s a quick glimpse at the path I&apos;ve taken so far.</h2>
+        <h2 className = "animate-fade animate-once animate-duration-[2000ms] animate-normal animate-fill-forwards text-lg max-w-2xl wrap">My journey in tech has been shaped by amazing opportunities and experiences. Here&apos;s a quick glimpse at the path I&apos;ve taken so far.</h2>
 
         <div className = "relative w-full flex flex-row"> {/*This div is so that the bamboo and the sword and card all line up side by side */}
           
@@ -119,8 +115,10 @@ export default function app() {
           <div className="translate-x-8 w-full py-8 flex flex-col gap-10 z-20">
 
             {/*below we map over the experience array of objects everytime it iterates it grabs the object and passes it trhough the argument "exp" to the callback function that defines what we are going to retrun and display which is the experience card component */}
-            {experience.map((exp) => (
-            <ExperienceCard key = {exp.key} experience = {exp}/>
+            {/*This experience card component also has some extra props like style and className these are being used so that in the component we can animate the experience cards without messing up the flex box. 
+               The style is used when defining vanilla css hence the weird looking syntax. className gets used in the parent div in the experience card component and it contains all animations */}
+            {experience.map((exp, i) => (
+              <ExperienceCard style = {{animationDelay: `${i*0.2}s`}} className = "animate-fade-up animate-once animate-duration-[1500ms] animate-normal animate-fill-forwards" key = {i} experience = {exp}/>
 
             ))}
           </div>

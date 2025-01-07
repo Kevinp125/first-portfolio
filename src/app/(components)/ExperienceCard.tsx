@@ -2,7 +2,6 @@ import Image from "next/image";
 
 //we need to define an interface in TS an interface is a way to define the shape or structure of an object. It is just type safety. It ensures the expereicne object we are getting as a prop matches the structure we define. Its a contract essentially
 interface Experience {
-  key: number;
   title: string;
   company: string;
   fromDate: string;
@@ -13,10 +12,10 @@ interface Experience {
   iconImage: string;
 }
 
-export default function ExperienceCard({ experience }: { experience: Experience }) {
+export default function ExperienceCard({ experience, style, className }: { experience: Experience, style: React.CSSProperties, className: string }) {
 
   return(
-    <div className = "flex flex-row items-start"> {/*flex row so that the sword image and the text are side by side only reason for this div*/}
+    <div style = {style} className = {`${className}flex flex-row items-start`}> {/*flex row so that the sword image and the text are side by side only reason for this div*/}
 
       <Image className = "select-none absolute rotate-45 -translate-x-6" src = "/images/sword.png" alt = "sword" width = {30} height = {50}/>
 
