@@ -24,7 +24,7 @@ export default function Navbar (){
     /* ─────────────────────────── MOBILE + MEDIUM (default) ─────────────────────────── */
     fixed bottom-0 inset-x-0
     h-16 flex items-center justify-evenly
-    bg-navbarFill/80 backdrop-blur-md safe-bottom
+    bg-navbarFill/60 backdrop-blur-md safe-bottom
     border-4 border-navbarBorder
     
 
