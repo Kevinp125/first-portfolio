@@ -17,9 +17,9 @@ export default function ExperienceCard({ experience, style, className }: { exper
   return(
     <div style = {style} className = {`${className}flex flex-row items-start`}> {/*flex row so that the sword image and the text are side by side only reason for this div*/}
 
-      <Image className = "select-none absolute rotate-45 -translate-x-6" src = "/images/sword.png" alt = "sword" width = {30} height = {50}/>
+      <Image className = "select-none absolute rotate-45 -translate-x-4 lg:-translate-x-6" src = "/images/sword.png" alt = "sword" width = {30} height = {50}/>
 
-      <div className = "wrap max-w-2xl flex flex-col bg-navbarFill rounded-xl w-full px-5 py-3 gap-2">{/*This next flex keeps everything wrapped inside it "text" stacked on each other */}
+      <div className = "wrap max-w-2xl flex flex-col bg-navbarFill rounded-xl w-80 md:w-full px-5 py-3 gap-2">{/*This next flex keeps everything wrapped inside it "text" stacked on each other */}
 
         <div className = "flex flex-row gap-2"> {/*Made another flex row so that the icon and company / company positon show up next to each other*/}
 

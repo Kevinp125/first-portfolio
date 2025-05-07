@@ -24,15 +24,15 @@ export default function Navbar (){
     /* ─────────────────────────── MOBILE + MEDIUM (default) ─────────────────────────── */
     fixed bottom-0 inset-x-0
     h-16 flex items-center justify-evenly
-    bg-navbarFill/60 backdrop-blur-md safe-bottom
-    border-4 border-navbarBorder
+    bg-navbarFill backdrop-blur-md safe-bottom
+    border-4 border-navbarBorder z-40
     
 
     /*───────────────────────────── DESKTOP ≥ lg (override) ───────────────────────────*/
 
     lg:left-auto lg:right-12 lg:top-1/2 transform lg:-translate-y-1/2 
-    lg:w-16 lg:h-96 bg-navbarFill rounded-3xl 
-    lg:flex-col shadow-xl z-10`}>{/*fixed makes the navbar stay in the same place on the screen, right-10 moves it 10 units from the right side of the screen, top-1/2 moves it 50% from the top of the screen, transform -translate-y-1/2 moves it up 50% of its height*/}
+    lg:w-16 lg:h-96 rounded-3xl 
+    lg:flex-col shadow-xl `}>{/*fixed makes the navbar stay in the same place on the screen, right-10 moves it 10 units from the right side of the screen, top-1/2 moves it 50% from the top of the screen, transform -translate-y-1/2 moves it up 50% of its height*/}
 
     {/*mapping through the links array and creating a Link tag for each link in the array, just easier and better code practice so we dont have to
       manually change a bunch of Link tags now if we want to update any specific link just go to link array*/}
