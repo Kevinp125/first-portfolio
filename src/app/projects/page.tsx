@@ -55,13 +55,13 @@ export default function app() {
     <div className = "flex flex-col items-center">
       
       {/*This div is to align the <p> tag with our header */}
-      <div className = "flex flex-row justify-start pl-44 pt-48">
+      <div className = "flex flex-row justify-start pt-60 pl-10 md:pt-96 lg:pl-44 lg:pt-48">
         <Header header = "Projects" icon = "Projects"/>
         <p className = "animate-fade animate-once animate-duration-[2000ms] animate-normal animate-fill-forwards text-lg max-w-2xl wrap ">Since I began studying computer science, I&apos;ve worked on a variety of projects showcasing my skills and creativity, which is all also on my GitHub.</p>
       </div>
 
       {/*This div maintains our grid of project cards. We map over the projectInfo array of objects and pass each object into the PorjectCard where the card gets rendered on to the grid */}
-      <div className = "grid grid-cols-2 gap-4 pt-8 pl-36 auto-rows-fr"> {/*Here we added auto-rows-fr to make sure if one card has a lot of tech and the height is bigger other cards match this height as well */}
+      <div className = "grid grid-cols-1 pl-7 mb-20 lg:grid-cols-2 gap-4 pt-8 lg:pl-36 lg:mb-0 auto-rows-fr"> {/*Here we added auto-rows-fr to make sure if one card has a lot of tech and the height is bigger other cards match this height as well */}
         {projectInfo.map((project, i) => (
           //below we passed in the inline css style prop to the ProjectCard component so that we can stagger the animation of each card. We do this by multiplying the index by 0.2s so that each card is delayed by 0.2s. We also passed in the className so we can give parent porject card div the fade-right animation
           //remember we need to use style because we need to change vanilla css since tailwind doesnt support dynamic delay times they are static
