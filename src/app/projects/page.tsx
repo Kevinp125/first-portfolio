@@ -55,7 +55,7 @@ export default function app() {
     <div className = "flex flex-col items-center">
       
       {/*This div is to align the <p> tag with our header */}
-      <div className = "flex flex-row justify-start pt-60 pl-12 md:pt-96 lg:pl-44 lg:pt-48">
+      <div className = "flex flex-row justify-start pt-60 pl-12 md:p-6 md:pt-96 lg:pl-50 lg:pt-48">
         <Header header = "Projects" icon = "Projects"/>
         <p className = "animate-fade animate-once animate-duration-[2000ms] animate-normal animate-fill-forwards text-lg max-w-2xl wrap ">Since I began studying computer science, I&apos;ve worked on a variety of projects showcasing my skills and creativity, which is all also on my GitHub.</p>
       </div>
