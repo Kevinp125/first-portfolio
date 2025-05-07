@@ -13,10 +13,10 @@ export default function Home() {
         
         <div className = "flex flex-col items-start justify-center lg:pt-48"> {/*wrapping the header and text in their own flex box so I can use items start to center them left across their cross axis which in this case is the horizontal one */}
           <Header header = "Home" icon = "Home" />
-          <p className = "text-white transform -mt-20 text-2xl max-w-60 sm:text-4xl sm:max-w-lg md:text-5xl md:max-w-xl lg:mt-0 lg:text-6xl lg:max-w-3xl animate-flip-down animate-duration-[2000ms] animate-ease-out animate-normal animate-fill-forwards z-10">{introductionText}</p>
+          <p className = "text-white transform -mt-24 text-2xl max-w-60 sm:text-4xl sm:max-w-lg md:text-5xl md:max-w-xl lg:mt-0 lg:text-6xl lg:max-w-3xl animate-flip-down animate-duration-[2000ms] animate-ease-out animate-normal animate-fill-forwards z-10">{introductionText}</p>
         </div>
         
-        <Image className = "select-none absolute bottom-11 sm:-bottom-20 " src = "/images/mtFuji.png" alt = "Mount Fuji" width = {800} height = {800}/>
+        <Image className = "select-none absolute bottom-12 md:bottom-7 lg:-bottom-20 " src = "/images/mtFuji.png" alt = "Mount Fuji" width = {800} height = {800}/>
 
       </div>
     </>
