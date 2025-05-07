@@ -1,9 +1,28 @@
 import Image from "next/image";
+import { useEffect } from "react";
 import Header from "./(components)/Header";
 
 const introductionText: string = "Hi, I'm Kevin Pereda — software engineer and undergraduate student at UCF."; //declaring a string variable that will hold the introduction text that will be displayed on the home page
 
 export default function Home() {
+
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+
+    // stash originals (in case other pages changed them)
+    const htmlOverflow = html.style.overflow;
+    const bodyOverflow = body.style.overflow;
+
+    html.style.overflow = "hidden";
+    body.style.overflow = "hidden";
+
+    /* cleanup on route‑change / unmount */
+    return () => {
+      html.style.overflow = htmlOverflow;
+      body.style.overflow = bodyOverflow;
+    };
+  }, []);
   return (
     <div className = "relative flex flex-col items-center justify-center h-screen overflow-hidden lg:justify-normal lg:pl-64"> {/*defining a flex box flex col so our text, header, and image all stack on each other vertically and also moving the container for all these things to the right rigth by 36 */}
       
