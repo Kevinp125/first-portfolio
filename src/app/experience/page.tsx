@@ -105,8 +105,10 @@ export default function app() {
       <div className= "flex flex-col items-start pt-56 md:pt-96 lg:pt-48"> {/*Another div this time so all elements inside stay in middle of page but also align with each other left. Kind of like a left-align */}
 
         {/*Header for the page experience as well as a little paragrpah describing my journey */}
-        <Header header = "Experience" icon = "Experience"/>
-        <h2 className = "animate-fade animate-once animate-duration-[2000ms] animate-normal animate-fill-forwards text-lg max-w-2xl wrap pl-2 md:pl-0">My journey in tech has been shaped by amazing opportunities and experiences. Here&apos;s a quick glimpse at the path I&apos;ve taken so far.</h2>
+        <div className = "pl-12 md:pl-0">
+          <Header header = "Experience" icon = "Experience"/>
+          <h2 className = "animate-fade animate-once animate-duration-[2000ms] animate-normal animate-fill-forwards text-lg max-w-2xl wrap md:pl-0">My journey in tech has been shaped by amazing opportunities and experiences. Here&apos;s a quick glimpse at the path I&apos;ve taken so far.</h2>
+        </div>
 
         <div className = "relative w-full flex flex-row"> {/*This div is so that the bamboo and the sword and card all line up side by side */}
           

@@ -3,7 +3,7 @@ import Header from "../(components)/Header";
 
 export default function app() {
   return (
-    <div className = "flex flex-col items-center justify-center overflow-hidden p-12 lg:pl-44">
+    <div className = "flex flex-col items-center justify-center overflow-hidden p-12 lg:pl-56">
       
       <div className = "flex justify-start pt-48 md:pt-80 lg:pt-48">
         <Header header = "About" icon = "About"/>

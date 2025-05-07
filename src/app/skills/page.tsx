@@ -40,7 +40,7 @@ export default function app() {
   return (
     <div className="flex flex-col items-center mb-16 lg:mb-0"> {/*This div is just to make sure all other siblings in this page stack on each other vertically */}
 
-      <div className = "flex flex-cols items-start pt-56 pl-10 md:pt-96 lg:pl-44 lg:pt-48"> {/*This div is to align the <p> tag with our header */}
+      <div className = "flex flex-cols items-start pt-56 pl-12 md:pt-96 lg:pl-44 lg:pt-48"> {/*This div is to align the <p> tag with our header */}
         <Header header = "Skills" icon = "Skills"/>
         <p className = "animate-fade animate-once animate-duration-[2000ms] animate-normal animate-fill-forwards text-lg max-w-2xl wrap ">Throughout my journey of studying computer science and working on various projects, I&apos;ve had the opportunity to work with and experiment with a diverse range of technologies, tools, and frameworks. Here&apos;s a glimpse of what I&apos;ve explored along the way. </p>
       </div>

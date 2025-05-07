@@ -16,6 +16,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      spacing: {
+        /* key → class name suffix | value → any CSS length */
+        "66":  "16.5rem",   //  60 px  →  p-15, pl-15, gap-15 …
+        "68":  "17rem",   //  60 px  →  p-15, pl-15, gap-15 …
+        "72":  "18rem",     // 288 px  →  p-72
+      },
       borderWidth: { //added this as well for custom borderWidths
         3: "3px",
       },
