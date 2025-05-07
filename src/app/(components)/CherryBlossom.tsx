@@ -4,7 +4,7 @@ export default function CherryBlossom() {
   return(
     <Image
       className = 
-      {`select-none fixed top-0 left-0 origin-top-left rotate-45 z-50 pointer-events-none 
+      {`select-none absolute top-0 left-0 origin-top-left rotate-45 z-50 pointer-events-none 
 
         /* translate: smaller on phones, larger on tablets, full on desktop */
         translate-x-24  -translate-y-20      /* default (<640 px) */
