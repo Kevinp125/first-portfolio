@@ -3,11 +3,11 @@ import Header from "../(components)/Header";
 
 export default function app() {
   return (
-    <div className = "flex flex-col items-center justify-center overflow-hidden pl-44">
+    <div className = "flex flex-col items-center justify-center overflow-hidden p-12 lg:pl-44">
       
-      <div className = "flex justify-start pt-48">
+      <div className = "flex justify-start pt-48 md:pt-80 lg:pt-48">
         <Header header = "About" icon = "About"/>
-        <p className = "wrap text-2xl max-w-2xl animate-fade-up animate-duration-[2000ms] animate-ease-out animate-normal animate-fill-forwards">
+        <p className = "wrap mb-7 text-xl md:text-2xl max-w-2xl animate-fade-up animate-duration-[2000ms] animate-ease-out animate-normal animate-fill-forwards">
           As a Computer Science student at the University of Central Florida, I bring a passion for technology and a collaborative spirit to every project. 
           I thrive in environments where clear communication and teamwork are essential. 
           Programming isn&apos;t just my profession; it&apos;s also my hobby. 
