@@ -2,6 +2,40 @@ import Image from "next/image";
 import Header from "./(components)/Header";
 import ScrollLock from "./(components)/ScrollLock";
 
+export const metadata = {
+  title: 'Kevin Pereda — Software Engineer & UCF Student',
+  description:
+    'Hi, I’m Kevin — a software engineer and undergraduate at UCF who loves full-stack projects, and turning ideas into code.',
+  alternates: {
+    canonical: 'https://kpereda.dev/',
+  },
+  openGraph: {
+    title: 'Kevin Pereda — Portfolio',
+    description:
+      'Explore Kevin’s projects, experience, and skills as a software engineer and UCF student.',
+    url: 'https://kpereda.dev/',
+    siteName: 'Kevin Pereda Portfolio',
+    images: [
+      {
+        url: 'https://kpereda.dev/og/cherryBlossom.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Stylized photo of Kevin with code and cherry-blossom motif',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kevin Pereda — Portfolio',
+    description:
+      'Software engineer & UCF student building cool stuff. Check out my projects!',
+  },
+};
+
+
+
 const introductionText: string = "Hi, I'm Kevin Pereda — software engineer and undergraduate student at UCF."; //declaring a string variable that will hold the introduction text that will be displayed on the home page
 
 export default function Home() {
