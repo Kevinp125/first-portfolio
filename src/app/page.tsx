@@ -50,7 +50,7 @@ export default function Home() {
           <p className = "text-white transform -mt-24 text-2xl max-w-60 sm:text-4xl sm:max-w-lg md:text-5xl md:max-w-xl lg:mt-0 lg:text-6xl lg:max-w-3xl animate-flip-down animate-duration-[2000ms] animate-ease-out animate-normal animate-fill-forwards z-10">{introductionText}</p>
         </div>
         
-        <Image className = "select-none absolute bottom-12 md:bottom-7 lg:-bottom-20 " src = "/images/mtFuji.png" alt = "Mount Fuji" width = {800} height = {800}/>
+        <Image className = "select-none absolute bottom-12 md:bottom-7 lg:-bottom-20 pointer-events-none " src = "/images/mtFuji.png" alt = "Mount Fuji" width = {800} height = {800}/>
 
       </div>
     </>

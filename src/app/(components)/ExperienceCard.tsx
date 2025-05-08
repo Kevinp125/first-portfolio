@@ -23,7 +23,7 @@ export default function ExperienceCard({ experience, style, className }: { exper
 
         <div className = "flex flex-col md:flex-row gap-2"> {/*Made another flex row so that the icon and company / company positon show up next to each other*/}
 
-          <Image className = " md:block select-none rounded-xl" src = {experience.iconImage} alt = "company logo" width = {60} height = {50}/>
+          <Image className = " md:block select-none rounded-xl pointer-events-none" src = {experience.iconImage} alt = "company logo" width = {60} height = {50}/>
 
           <div className= "flex flex-col gap-1"> {/*Due to wanting to only stack the company and title i held at company /start date vertically alongside company logo had to delcare another flex-col */}
             <p className = "text-2xl text-subtlePink font-extrabold"> {experience.company} </p>
