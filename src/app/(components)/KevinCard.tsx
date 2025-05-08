@@ -73,7 +73,7 @@ export default function KevinCard (){
             <div className = "flex justify-center gap-3 mt-32">
 
               {circleSocialIcons && circleSocialIcons.map(({href, icon}) =>(
-                <div key = {href} className = "w-16 h-16 bg-pink-300 rounded-full flex items-center justify-center"> 
+                <div key = {href} className = "w-16 h-16 bg-pink-300 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out  hover:scale-110 hover:bg-subtlePink" > 
                   <a href={href} target="_blank" rel="noopener noreferrer">
                     {icon}
                   </a>
@@ -82,7 +82,7 @@ export default function KevinCard (){
               ))}
             </div>
 
-            <div className = " flex justify-center items-center w-52 h-14 mt-6 rounded-full bg-subtlePink">
+            <div className = " flex justify-center items-center w-52 h-14 mt-6 rounded-full bg-subtlePink transition-all duration-300 ease-in-out  hover:scale-105 hover:bg-pink-300">
               <Link target = "_blank" href = "/KevinResume.pdf"> <FileText className = "text-black w-6 h-6" /> </Link>
               <Link target = "_blank" href = "/KevinResume.pdf" className = "text-black text-2xl target:"> Resume </Link>
 

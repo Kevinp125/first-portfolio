@@ -22,7 +22,7 @@ export default function Navbar (){
     <nav
     className = {`
     /* ─────────────────────────── MOBILE + MEDIUM (default) ─────────────────────────── */
-    fixed bottom-0 inset-x-0
+    fixed bottom-0 left-4 right-4
     h-16 flex items-center justify-evenly
     bg-navbarFill backdrop-blur-md safe-bottom
     border-4 border-navbarBorder z-40
