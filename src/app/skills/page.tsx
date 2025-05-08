@@ -84,7 +84,7 @@ export default function app() {
 
       <div className = "flex flex-cols items-start pt-56 pl-12 md:pl-0 md:pt-96 lg:pl-44 lg:pt-48"> {/*This div is to align the <p> tag with our header */}
         <Header header = "Skills" icon = "Skills"/>
-        <p className = "animate-fade animate-once animate-duration-[2000ms] animate-normal animate-fill-forwards text-lg max-w-2xl wrap ">Throughout my journey of studying computer science and working on various projects, I&apos;ve had the opportunity to work with and experiment with a diverse range of technologies, tools, and frameworks. Here&apos;s a glimpse of what I&apos;ve explored along the way. </p>
+        <p className = "animate-fade animate-once animate-duration-[2000ms] animate-normal animate-fill-forwards text-lg max-w-2xl wrap ">Throughout my journey of studying computer science and working on various projects, I&apos;ve had the opportunity to work with and experiment with a diverse range of technologies, tools, and frameworks. Here&apos;s an overview of what I&apos;ve explored along the way. </p>
       </div>
       
       <div className = "grid grid-cols-1 gap-16 pt-12 lg:pl-40"> {/*Here we define a grid of only one column so that all of our sections "sibling divs" can stack on each other */}
