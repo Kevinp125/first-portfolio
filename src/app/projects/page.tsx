@@ -53,11 +53,11 @@ export default function app() {
 
     //my website project
     {
-      name: "Kevin.dev",
+      name: "kpereda.dev",
       description: "The site you are currently on! My personal portfolio website built with Next.js and Tailwind CSS. It showcases my projects, skills, and experiences.",
       imageSrc: "/images/projectIcons/naruto.png",
       imageAlt: "Naruto Kevin Website Logo",
-      linkRef:"",
+      linkRef:"https://github.com/Kevinp125/first-portfolio.git",
       techUsed: ["Next.js", "Tailwind", "React"],
     },
     
