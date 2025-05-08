@@ -1,6 +1,51 @@
 import Header from "../(components)/Header";
 import ProjectCard from "../(components)/ProjectCard";
 
+export const metadata = {
+  title: 'Projects — Kevin Pereda',
+
+  keywords: [
+    'Kevin Pereda',
+    'software engineer portfolio',
+    'UCF student projects',
+    'Next.js',
+    'Tailwind CSS',
+    'React',
+    'Unity game dev',
+    'C#',
+    'Java data structures',
+    '2-4 tree implementation',
+    'Skip list project',
+    'full-stack web apps',
+    'bullet time game',
+    'algorithm visualization',
+    'GitHub projects'
+  ],
+
+  description:
+    'Browse Kevin Pereda’s signature projects, built with Unity, Java, Next.js, and more—showcasing hands-on skill in data structures, and full-stack web apps.',
+  alternates: {
+    canonical: 'https://kpereda.dev/projects',
+  },
+  openGraph: {
+    title: 'Projects — Kevin Pereda',
+    description:
+      'Browse Kevin Pereda’s signature projects, built with Unity, Java, Next.js, and more—showcasing hands-on skill in game dev, data structures, and full-stack web apps.',
+    url: 'https://kpereda.dev/projects',
+    siteName: 'Kevin Pereda Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Projects — Kevin Pereda',
+    description:
+      'Browse Kevin Pereda’s signature projects, built with Unity, Java, Next.js, and more—showcasing hands-on skill in data structures, and full-stack web apps.',
+  },
+}
+
+
+
 export default function app() {
 
   {/*Below is an Array of objects that contains project objects. If you want a new object on your website or to edit any old ones jsut edit the array the actual rendering code uses mapping so you'll be good */}

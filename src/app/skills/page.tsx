@@ -1,3 +1,45 @@
+export const metadata = {
+  title: 'Skills — Kevin Pereda',
+  description:
+    'Explore the programming languages, frameworks, and tools Kevin Pereda has mastered—from C, Java, and Unity to Next.js, Tailwind, and GitHub.',
+  alternates: {
+    canonical: 'https://kpereda.dev/skills',
+  },
+  openGraph: {
+    title: 'Skills — Kevin Pereda',
+    description:
+      'Explore the programming languages, frameworks, and tools Kevin Pereda has mastered—from C, Java, and Unity to Next.js, Tailwind, and GitHub.',
+    url: 'https://kpereda.dev/skills',
+    siteName: 'Kevin Pereda Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Skills — Kevin Pereda',
+    description:
+      'Explore the programming languages, frameworks, and tools Kevin Pereda has mastered—from C, Java, and Unity to Next.js, Tailwind, and GitHub.',
+  },
+  keywords: [
+    'Kevin Pereda',
+    'programming skills',
+    'C programming',
+    'C++',
+    'C#',
+    'Java',
+    'JavaScript',
+    'TypeScript',
+    'Next.js',
+    'React',
+    'Tailwind CSS',
+    'Unity',
+    'GitHub',
+    'software tools',
+    'web development'
+  ]
+}
+
+
 import Header from "../(components)/Header";
 import IconCard from "../(components)/IconCard";
 

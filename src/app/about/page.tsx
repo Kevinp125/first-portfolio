@@ -1,5 +1,40 @@
 import Header from "../(components)/Header";
 
+export const metadata = {
+  title: 'About — Kevin Pereda',
+  description:
+    'As a Computer Science student at UCF, Kevin combines a passion for full-stack development, teamwork, and a “strong body, strong mind” lifestyle to fuel creativity and productivity.',
+  alternates: {
+    canonical: 'https://kpereda.dev/about',
+  },
+  openGraph: {
+    title: 'About — Kevin Pereda',
+    description:
+      'Meet Kevin Pereda: UCF CS student, software engineer, and advocate for a balanced, active lifestyle that drives innovation and teamwork.',
+    url: 'https://kpereda.dev/about',
+    siteName: 'Kevin Pereda Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'About — Kevin Pereda',
+    description:
+      'Meet Kevin Pereda: UCF CS student, software engineer, and advocate for a balanced, active lifestyle that drives innovation and teamwork.',
+  },
+  keywords: [
+    'Kevin Pereda',
+    'About Kevin Pereda',
+    'UCF student',
+    'Computer Science',
+    'software engineer',
+    'strong body strong mind',
+    'teamwork',
+    'technology passion',
+    'active lifestyle',
+    'full-stack development'
+  ]
+}
 
 export default function app() {
   return (

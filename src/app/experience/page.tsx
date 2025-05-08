@@ -1,6 +1,42 @@
 import Header from "../(components)/Header";
 import ExperienceCard from "../(components)/ExperienceCard";
 
+export const metadata = {
+  title: 'Experience — Kevin Pereda',
+  description:
+    'Discover Kevin Pereda’s journey in tech: from a Meta Software Engineering internship to building data‐accuracy tools at Mitsubishi Power Americas, hands‐on mechanical engineering, and social media marketing.',
+  alternates: {
+    canonical: 'https://kpereda.dev/experience',
+  },
+  openGraph: {
+    title: 'Experience — Kevin Pereda',
+    description:
+      'Discover Kevin Pereda’s journey in tech: from a Meta Software Engineering internship to building data‐accuracy tools at Mitsubishi Power Americas, hands‐on mechanical engineering, and social media marketing.',
+    url: 'https://kpereda.dev/experience',
+    siteName: 'Kevin Pereda Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Experience — Kevin Pereda',
+    description:
+      'Discover Kevin Pereda’s journey in tech: from a Meta Software Engineering internship to building data‐accuracy tools at Mitsubishi Power Americas, hands‐on mechanical engineering, and social media marketing.',
+  },
+  keywords: [
+    'Kevin Pereda',
+    'software engineer experience',
+    'Meta internship',
+    'Mitsubishi Power',
+    'mechanical engineering assistant',
+    'social media marketing',
+    'UCF student',
+    'tech journey',
+    'internship projects'
+  ]
+}
+
+
 export default function app() {
   
   //this array of objects stores all my expericence data( internships jobs etc if you ever wish to add / update any experiece just come to this array and edit here code below will use .map so it updates regardless)
