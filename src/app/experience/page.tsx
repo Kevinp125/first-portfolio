@@ -42,19 +42,46 @@ export default function app() {
   //this array of objects stores all my expericence data( internships jobs etc if you ever wish to add / update any experiece just come to this array and edit here code below will use .map so it updates regardless)
   const experience = [
 
+    //Knighthacks
+
+    {
+      title: "Projects / Mentor Director",
+      company: "Knighthacks",
+      fromDate: "Feburary 2025 - Present",
+    
+      //description nested object because it has a paragraph and an array of bullet points that describe what i did at the job
+      description: {
+        paragraph: "***This is where description of work at this compnay goes need to fill this in after website is done",
+            
+        bullets: [
+          "Guided over 100 mentors/mentees in professional development, hackathon success, and software development.",        
+          "Improved the proportion of mentees with professional resumes by 48%, ensuring preparation for job applications.",
+          "Organized LinkedIn optimization and headshot sessions, supporting 60+ mentees in building professional presence.",
+          "Increased program participation by 53%, improving engagement and organization outreach.",
+        ]
+      },
+          
+      iconImage: "/images/companyLogos/Knighthackslogo.png",
+    },
+
     //META
 
     {
-      title: "MetaU Software Engineering Intern",
+      title: "Software Engineering Intern",
       company: "Meta",
-      fromDate: "Incoming Summer 2025",
+      fromDate: "June 2025 - August 2025",
 
       //description nested object because it has a paragraph and an array of bullet points that describe what i did at the job
       description: {
         paragraph: "***This is where description of work at this compnay goes need to fill this in after website is done",
         
         bullets: [
-          "Thrilled to join Meta as a Software Engineer Intern through the University Program this upcoming summer, eager to collaborate with talented individuals, expand my software engineering skills, and contribute to technology that connects people worldwide."
+          "Completed 3-week intensive web development training program alongside Meta engineers, mastering React, full-stack development, HTML, CSS, and JavaScript through 50+ hours of instruction.",        
+          "Partnered with experienced Meta engineers on capstone project, conducting regular 1-on-1 sessions discussing code architecture and implementation strategies.",
+          "Applied Git workflows and technical documentation, learning to scope challenges and structure 5-week timeline from project inception to deployment.",
+          "Engaged in daily code reviews across 73 pull requests, resolving 30+ feedback points while receiving mentorship on industry-standard development workflows.",
+          "Presented capstone project to 10+ Meta engineers, demonstrating technical implementation and problem-solving approach for real-world web development challenges.",
+          "Launched a production experiment in Facebook Ads Manager to roll out a new ad preview to targeted user groups."
         ]
       },
       
